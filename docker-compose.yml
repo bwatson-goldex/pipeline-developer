@@ -4,7 +4,7 @@ services:
         build: ./jenkins
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
-            - ../sample-pipeline-spring-petclinic:/pipeline-dev
+            - /Users/brendanwatson/OneDrive - Goldex Technologies Limited/IdeaProjects/goldexapp/goldex-eldorado/eldorado-db-schema:/pipeline-dev
         environment:
             JAVA_OPTS: -Djenkins.install.runSetupWizard=false
         ports:

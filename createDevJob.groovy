@@ -22,6 +22,6 @@ job("pipeline-updater") {
         shell(shellCommand)
     }
     publishers {
-        downstream('devPipeline', 'STABLE')
+        downstream('devPipeline', 'SUCCESS')
     }
 }
